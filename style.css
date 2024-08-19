@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #e5dc5a;
+    /* height: 5rem; */
+    line-height: 5rem;  /* to set it vertically center of whatever the height is*/
+}
+
+.choice {  /*divs of rock,paper,scissors*/
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;  /*to make it a circle*/
+    display: flex; 
+    /*using flex container to put img in the center when u hover it (eq bg color around the img)*/
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    /*to make changes when u hover on img*/
+    cursor: pointer;
+    background-color: #e5dc5a;
+}
+
+img {  /*actual imgs of rock,paper,scissors*/
+    height: 180px;
+    width: 180px;
+    object-fit: cover; 
+    /*to fix the shrinking/enlarge imgs problem*/
+    border-radius: 50%; 
+    /*making img circle*/
+}
+
+.choices {  /*parent div of all the choices(r,p,s)*/
+    /*making changes on all*/
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    gap: 1rem;
+    margin-top: 4rem; /*gap b/w h1 n imgs*/
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 10rem;
+}
+
+#userScore, #compScore {
+    font-size: 3rem;
+}
+
+.msgContainer {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #e5dc5a;
+    font-size: 2rem;
+    display: inline;  /*give bg as much as the text inside it*/
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
